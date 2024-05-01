@@ -8,7 +8,7 @@
     tools:context=".ProfilePage7Activity">
 
     <ImageView
-        android:id="@+id/rectangulo"
+        android:id="@+id/imagerectangulo"
         android:layout_width="412dp"
         android:layout_height="148dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -17,7 +17,7 @@
         app:srcCompat="@drawable/rectangle" />
 
     <ImageView
-        android:id="@+id/flechaderecha"
+        android:id="@+id/imageflechaderecha"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
@@ -27,7 +27,7 @@
         app:srcCompat="@drawable/back_icon" />
 
     <TextView
-        android:id="@+id/enviarmoney"
+        android:id="@+id/textenviarmoney"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="120dp"
@@ -42,27 +42,29 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/reem2"
+        android:id="@+id/imagereem2"
         android:layout_width="60sp"
         android:layout_height="60sp"
         android:layout_marginStart="20dp"
         android:layout_marginTop="20dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/rectangulo"
+        app:layout_constraintTop_toBottomOf="@+id/imagerectangulo"
         app:srcCompat="@drawable/picture_reem" />
 
     <TextView
-        android:id="@+id/reem3"
+        android:id="@+id/textreem3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/textoreem47"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="24dp"
         android:fontFamily="@font/jua"
+        android:text="@string/textoreem47"
         android:textSize="12sp"
-        tools:layout_editor_absoluteX="99dp"
-        tools:layout_editor_absoluteY="178dp" />
+        app:layout_constraintStart_toEndOf="@+id/imagereem2"
+        app:layout_constraintTop_toBottomOf="@+id/imagerectangulo" />
 
     <TextView
-        android:id="@+id/mailreem"
+        android:id="@+id/textmailreem"
         android:layout_width="126dp"
         android:layout_height="24dp"
         android:layout_marginTop="1dp"
@@ -70,42 +72,119 @@
         android:text="@string/textomailreem53"
         android:textColor="@color/material_dynamic_neutral80"
         android:textSize="12sp"
-        app:layout_constraintStart_toStartOf="@+id/reem3"
-        app:layout_constraintTop_toBottomOf="@+id/reem3" />
+        app:layout_constraintStart_toStartOf="@+id/textreem3"
+        app:layout_constraintTop_toBottomOf="@+id/textreem3" />
 
     <TextView
-        android:id="@+id/cantingresar"
+        android:id="@+id/textcantingresar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="15dp"
         android:layout_marginTop="32dp"
         android:fontFamily="@font/jua"
         android:text="@string/textcantingresar28"
         android:textSize="14sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/reem2" />
+        app:layout_constraintStart_toStartOf="@+id/imagereem2"
+        app:layout_constraintTop_toBottomOf="@+id/imagereem2" />
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/ingreem"
-        android:layout_width="345sp"
-        android:layout_height="56sp"
+    <ImageView
+        android:id="@+id/imagerectangulo2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.019"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textcantingresar"
+        app:srcCompat="@drawable/rectangle2" />
+
+    <TextView
+        android:id="@+id/textcantreem"
+        android:layout_width="51dp"
+        android:layout_height="17dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/jua"
+        android:text="20.00"
+        android:textColor="@color/azul"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imagerectangulo2"
+        app:layout_constraintStart_toStartOf="@+id/imagerectangulo2"
+        app:layout_constraintTop_toTopOf="@+id/imagerectangulo2" />
+
+    <TextView
+        android:id="@+id/textnottransf"
+        android:layout_width="157dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/jua"
+        android:text="@string/textnotastransfer29"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/imagerectangulo2"
+        app:layout_constraintTop_toBottomOf="@+id/imagerectangulo2" />
+
+    <ImageView
+        android:id="@+id/imagerectangulo3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
         android:layout_marginEnd="15dp"
-        android:textColorHint="@color/azul"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/cantingresar"
-        app:layout_constraintTop_toBottomOf="@+id/cantingresar"
-        app:layout_constraintBaseline_creator="">
+        app:layout_constraintStart_toStartOf="@+id/textnottransf"
+        app:layout_constraintTop_toBottomOf="@+id/textnottransf"
+        app:srcCompat="@drawable/rectangle3" />
 
-        <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="match_parent"
-            android:layout_height="41dp"
-            android:fontFamily="@font/jua"
-            android:hint="20.00"
-            android:textColor="@color/azul"
-            android:textSize="16sp" />
 
-    </com.google.android.material.textfield.TextInputLayout>
+    <ImageView
+        android:id="@+id/imagerectangulo4"
+        android:layout_width="413dp"
+        android:layout_height="99dp"
+        android:layout_marginTop="112dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imagerectangulo3"
+        app:srcCompat="@drawable/rectangle4" />
+
+    <Button
+        android:id="@+id/butingreard3"
+        style="@style/botones"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="10dp"
+        android:fontFamily="@font/jua"
+        android:text="@string/textingresardinero25"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imagerectangulo4" />
+
+    <TextView
+        android:id="@+id/textagregarnot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/textagregarnotastransfer30"
+        android:textColor="@color/material_dynamic_neutral80"
+        app:layout_constraintStart_toStartOf="@+id/imagerectangulo3"
+        app:layout_constraintTop_toTopOf="@+id/imagerectangulo3" />
+
+    <ImageView
+        android:id="@+id/imagerequest1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="116dp"
+        android:layout_marginTop="14dp"
+        app:layout_constraintStart_toStartOf="@+id/butingreard3"
+        app:layout_constraintTop_toTopOf="@+id/butingreard3"
+        app:srcCompat="@drawable/request_icon2" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -13,7 +13,7 @@ class LoginPage3Activity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_login_page3)
-        val registrase=findViewById<Button>(R.id.login)
+        val registrase=findViewById<Button>(R.id.butlogin)
         registrase.setOnClickListener{
             val intent= Intent(this,SignupPage4Activity::class.java)
             startActivity(intent)

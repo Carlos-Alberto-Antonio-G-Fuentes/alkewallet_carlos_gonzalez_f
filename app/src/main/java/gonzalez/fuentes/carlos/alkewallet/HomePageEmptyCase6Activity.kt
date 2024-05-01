@@ -13,8 +13,8 @@ class HomePageEmptyCase6Activity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_home_page_empty_case6)
-        val textbalance=findViewById<TextView>(R.id.balance2)
-                textbalance.setOnClickListener{
+        val textbala=findViewById<TextView>(R.id.textbalance2)
+                textbala.setOnClickListener{
                     val intent=Intent(this,ProfilePage7Activity::class.java)
                     startActivity(intent)
                 }

@@ -2,18 +2,18 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+    android:id="@+id/loginpage"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".LoginPage3Activity"
     android:background="@drawable/background_loginpage">
 
     <TextView
-        android:id="@+id/bienvenidaregistro"
+        android:id="@+id/textbienvenidaregistro"
         android:layout_width="345dp"
         android:layout_height="106dp"
         android:layout_marginStart="30dp"
-        android:layout_marginTop="85dp"
+        android:layout_marginTop="45dp"
         android:layout_marginEnd="30dp"
         android:fontFamily="@font/jua"
         android:text="@string/textempiezatransferir4"
@@ -25,50 +25,50 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/nombre"
+        android:id="@+id/textnombre"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="580dp"
+        android:layout_marginTop="113dp"
         android:fontFamily="@font/jua"
         android:text="@string/textmail5"
         android:textSize="14sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.105"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textbienvenidaregistro" />
 
     <TextView
-        android:id="@+id/b"
+        android:id="@+id/textcontrasena1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="448dp"
+        android:layout_marginTop="35dp"
         android:fontFamily="@font/jua"
         android:text="@string/textcontrasena7"
         android:textSize="14sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/textInputLayout" />
+        app:layout_constraintStart_toStartOf="@+id/textimputingresatuemail"
+        app:layout_constraintTop_toBottomOf="@+id/textimputingresatuemail" />
 
     <TextView
-        android:id="@+id/olvidastecontrasena"
+        android:id="@+id/textolvidastecontrasena"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="284dp"
+        android:layout_marginTop="24dp"
         android:fontFamily="@font/jua"
         android:text="@string/textolvidocontrasena9"
         android:textColor="@color/azul"
         android:textSize="14sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.754"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputcontrasena" />
 
     <Button
-        android:id="@+id/login"
+        android:id="@+id/butlogin"
         android:layout_width="298dp"
         android:layout_height="51dp"
         android:layout_marginBottom="160dp"
@@ -80,7 +80,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/crearunacta"
+        android:id="@+id/textcrearunacta"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="92dp"
@@ -95,14 +95,16 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/textInputLayout"
+        android:id="@+id/textimputingresatuemail"
         android:layout_width="310dp"
         android:layout_height="65dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="29dp"
         android:hint="@string/textingresatumail6"
         android:textColorHint="@color/material_dynamic_neutral80"
-        app:layout_constraintStart_toStartOf="@+id/nombre"
-        app:layout_constraintTop_toBottomOf="@+id/nombre">
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textnombre"
+        app:layout_constraintTop_toBottomOf="@+id/textnombre">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
@@ -112,23 +114,25 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/textInputLayout2"
+        android:id="@+id/textInputcontrasena"
         android:layout_width="310dp"
         android:layout_height="65dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="29dp"
         android:hint="@string/textcontrasena7"
         android:textColorHint="@color/material_dynamic_neutral80"
         app:endIconMode="password_toggle"
-        app:layout_constraintStart_toStartOf="@+id/textInputLayout"
-        app:layout_constraintTop_toBottomOf="@+id/b">
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textimputingresatuemail"
+        app:layout_constraintTop_toBottomOf="@+id/textcontrasena1">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/jua"
-            android:textSize="14sp"
+            android:textSize="14sp"/>
 
-            />
+
     </com.google.android.material.textfield.TextInputLayout>
 
 

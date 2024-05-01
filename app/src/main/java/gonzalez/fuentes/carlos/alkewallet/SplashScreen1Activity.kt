@@ -14,7 +14,7 @@ class SplashScreen1Activity : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_splash_screen1)
         //Declarar imagen en una variable
-        val logoapp=findViewById<ImageView>(R.id.logo)
+        val logoapp=findViewById<ImageView>(R.id.imagelogo)
         logoapp.setOnClickListener{
             val intent= Intent(this,LoginSignupPage2Activity::class.java)
             startActivity(intent)
