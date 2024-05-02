@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/homepageempty"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomePageEmptyCase6Activity">
+
+    <ImageView
+        android:id="@+id/imagetriangulo2"
+        android:layout_width="417dp"
+        android:layout_height="296dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/background_triangulo" />
+
+
+    <TextView
+        android:id="@+id/imageinicio2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="53dp"
+        android:fontFamily="@font/jua"
+        android:text="@string/textinicio22"
+        android:textColor="@color/blanco"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textholaamanda2"
+        android:layout_width="100dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="120px"
+        android:fontFamily="@font/jua"
+        android:text="@string/textohola37"
+        android:textColor="@color/material_dynamic_neutral80"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageinicio2" />
+
+
+    <TextView
+        android:id="@+id/textbalance2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/jua"
+        android:text="@string/textbalancetotal23"
+        android:textColor="@color/blanco"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textholaamanda2" />
+
+    <TextView
+        android:id="@+id/textsaldo2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/jua"
+        android:text="@string/textmontobalance"
+        android:textColor="@color/blanco"
+        android:textSize="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textbalance2" />
+
+    <ImageView
+        android:id="@+id/imagealerta2"
+        android:layout_width="42dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="28dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imagetriangulo2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/icon" />
+
+    <ImageView
+        android:id="@+id/imagecirculo2"
+        android:layout_width="12dp"
+        android:layout_height="10dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="36dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imagealerta2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/oval" />
+
+    <ImageView
+        android:id="@+id/imageamanda2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/picture_amanda2" />
+
+    <Button
+        android:id="@+id/butenviard2"
+        style="@style/botones2"
+        android:layout_width="166dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/jua"
+        android:text="@string/textenviardinero24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imagetriangulo2" />
+
+    <Button
+        android:id="@+id/butingresard2"
+        style="@style/botones"
+        android:layout_width="166dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="30dp"
+        android:fontFamily="@font/jua"
+        android:text="@string/textingresardinero25"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/butenviard2"
+        app:layout_constraintTop_toBottomOf="@+id/imagetriangulo2" />
+
+    <TextView
+        android:id="@+id/textulttrans2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/jua"
+        android:text="@string/textulttransacc26"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/butenviard2"
+        app:layout_constraintTop_toBottomOf="@+id/butenviard2" />
+
+    <ImageView
+        android:id="@+id/imagenotas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="147dp"
+        android:layout_marginTop="488dp"
+        android:layout_marginEnd="146dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imagetriangulo2"
+        app:srcCompat="@drawable/illustration" />
+
+    <TextView
+        android:id="@+id/textnohaytransacc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="112dp"
+        android:text="@string/textnohaytransacc27"
+        android:fontFamily="@font/jua"
+        android:textSize="12sp"
+        android:textColor="@color/material_dynamic_neutral80"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imagenotas" />
+
+    <ImageView
+        android:id="@+id/imagesendd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="@+id/butenviard2"
+        app:layout_constraintTop_toTopOf="@+id/butenviard2"
+        app:srcCompat="@drawable/send_icon2" />
+
+    <ImageView
+        android:id="@+id/imagerequest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="@+id/butingresard2"
+        app:layout_constraintTop_toTopOf="@+id/butingresard2"
+        app:srcCompat="@drawable/request_icon2" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
