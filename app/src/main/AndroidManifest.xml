@@ -40,7 +40,7 @@
             android:name=".LoginSignupPage2Activity"
             android:exported="false" />
         <activity
-            android:name=".SplashScreen1Activity"
+            android:name=".view.SplashScreen1Activity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

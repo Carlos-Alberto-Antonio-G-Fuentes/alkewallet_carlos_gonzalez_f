@@ -1,13 +1,13 @@
-package gonzalez.fuentes.carlos.alkewallet
+package gonzalez.fuentes.carlos.alkewallet.view
 
 import android.content.Intent
 import android.os.Bundle
-import android.view.LayoutInflater
-import android.widget.ImageView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import gonzalez.fuentes.carlos.alkewallet.LoginSignupPage2Activity
+import gonzalez.fuentes.carlos.alkewallet.R
 import gonzalez.fuentes.carlos.alkewallet.databinding.ActivitySplashScreen1Binding
 
 class SplashScreen1Activity : AppCompatActivity() {
@@ -20,7 +20,7 @@ class SplashScreen1Activity : AppCompatActivity() {
 
         //Declarar imagen en una variable
         binding.imagelogo.setOnClickListener{
-            val intent= Intent(this,LoginSignupPage2Activity::class.java)
+            val intent= Intent(this, LoginSignupPage2Activity::class.java)
             startActivity(intent)
         }
 
