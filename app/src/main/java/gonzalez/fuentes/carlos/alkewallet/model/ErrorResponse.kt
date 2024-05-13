@@ -1,6 +1,6 @@
 package gonzalez.fuentes.carlos.alkewallet.model
 
-data class Errorresponse(
+data class ErrorResponse(
     val error: String,
     val status: Long
 )

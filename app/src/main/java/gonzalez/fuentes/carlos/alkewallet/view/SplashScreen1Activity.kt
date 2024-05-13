@@ -11,15 +11,15 @@ import gonzalez.fuentes.carlos.alkewallet.R
 import gonzalez.fuentes.carlos.alkewallet.databinding.ActivitySplashScreen1Binding
 
 class SplashScreen1Activity : AppCompatActivity() {
-    lateinit var binding: ActivitySplashScreen1Binding
+    lateinit var bond: ActivitySplashScreen1Binding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        binding= ActivitySplashScreen1Binding.inflate(layoutInflater)
-        setContentView(binding.root)
+        bond= ActivitySplashScreen1Binding.inflate(layoutInflater)
+        setContentView(bond.root)
 
         //Declarar imagen en una variable
-        binding.imagelogo.setOnClickListener{
+        bond.imagelogo.setOnClickListener{
             val intent= Intent(this, LoginSignupPage2Activity::class.java)
             startActivity(intent)
         }
